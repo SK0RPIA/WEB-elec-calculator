@@ -12,12 +12,14 @@
     <div class="container">
         <h1>Calculateur de Coûts d'Électricité</h1>
         <label for="unit">Unité de Puissance:</label>
-        <select id="unit">
-            <option value="W">Watts (W)</option>
-            <option value="kW">Kilowatts (kW)</option>
-        </select>
-        <label for="power">Puissance:</label>
-        <input type="number" id="power" required>
+        <div class="power-group">
+            <label for="power">Puissance:</label>
+            <input type="number" id="power" required>
+            <select id="unit" title="Sélectionnez l'unité de puissance">
+                <option value="W">Watts (W)</option>
+                <option value="kW">Kilowatts (kW)</option>
+            </select>
+        </div>
         <label for="hours">Heures d'Utilisation Quotidienne:</label>
         <input type="number" id="hours" required>
         <label for="cost">Coût en € par Kilowatt-Heure:</label>
