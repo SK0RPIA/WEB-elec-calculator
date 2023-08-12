@@ -136,3 +136,45 @@ button:hover {
 #costUnit:focus option {
     display: block;
 }
+
+.hours-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#hoursInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#hoursUnit {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background-color: #f7d358;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+#hoursUnit:hover {
+    background-color: #f5bf42;
+}
+
+#hoursUnit option {
+    display: none;
+}
+
+#hoursUnit:before {
+    content: attr(title);
+    display: block;
+}
+
+#hoursUnit:focus option {
+    display: block;
+}

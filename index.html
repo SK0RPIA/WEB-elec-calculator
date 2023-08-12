@@ -20,8 +20,17 @@
                 <option value="kW">Kilowatts (kW)</option>
             </select>
         </div>
-        <label for="hours">Heures d'Utilisation Quotidienne:</label>
-        <input type="number" id="hours" required>
+        <div class="hours-group">
+            <label for="hours">Heures d'Utilisation:</label>
+            <input type="number" id="hoursInput" required>
+            <select id="hoursUnit" title="Sélectionnez la période">
+                <option value="day">/ Jour</option>
+                <option value="week">/ Semaine</option>
+                <option value="month">/ Mois</option>
+                <option value="year">/ An</option>
+            </select>
+        </div>
+
         <div class="cost-group">
             <label for="cost">Coût par Kilowatt-Heure:</label>
             <input type="number" id="cost" required>
