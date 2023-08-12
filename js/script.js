@@ -1,17 +1,21 @@
 function calculateCosts() {
     var unit = document.getElementById('unit').value;
+    var costUnit = document.getElementById('costUnit').value;
     var power = document.getElementById('power').value;
-    var hours = document.getElementById('hours').value;
     var costPerKWh = document.getElementById('cost').value;
+    var hours = document.getElementById('hours').value;
 
-    // Convertir en kilowatts si l'unité choisie est en watts
     if (unit === 'W') {
-        power = power / 1000;
+        power = power / 1000; // Convertir en kilowatts
+    }
+
+    if (costUnit === 'cent') {
+        costPerKWh = costPerKWh / 100; // Convertir en euros
     }
 
     var dailyCost = power * hours * costPerKWh;
-    var monthlyCost = dailyCost * 30; // Approximation pour un mois
-    var yearlyCost = dailyCost * 365; // Calcul pour une année
+    var monthlyCost = dailyCost * 30;
+    var yearlyCost = dailyCost * 365;
 
     document.getElementById('dailyCost').textContent = dailyCost.toFixed(2);
     document.getElementById('monthlyCost').textContent = monthlyCost.toFixed(2);

@@ -18,7 +18,10 @@ body {
     text-align: center;
 }
 
-label, select, input, button {
+label,
+select,
+input,
+button {
     display: block;
     width: 100%;
     margin: 10px 0;
@@ -26,7 +29,8 @@ label, select, input, button {
     border-radius: 5px;
 }
 
-select, input {
+select,
+input {
     border: 1px solid #ccc;
 }
 
@@ -48,6 +52,7 @@ button:hover {
     font-weight: bold;
     color: #f7d358;
 }
+
 .power-group {
     position: relative;
     display: flex;
@@ -87,5 +92,47 @@ button:hover {
 }
 
 #unit:focus option {
+    display: block;
+}
+
+.cost-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#cost {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#costUnit {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background-color: #f7d358;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+#costUnit:hover {
+    background-color: #f5bf42;
+}
+
+#costUnit option {
+    display: none;
+}
+
+#costUnit:before {
+    content: attr(title);
+    display: block;
+}
+
+#costUnit:focus option {
     display: block;
 }
