@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Coûts d'Électricité</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculateur de Coûts d'Électricité</h1>
+        <div class="input-group">
+            <label for="watts">Consommation en Watts par Heure:</label>
+            <input type="number" id="watts" placeholder="Enter la quantité en watts" required>
+        </div>
+        <div class="input-group">
+            <label for="cost">Coût de l'Électricité par Kilowatt-Heure:</label>
+            <input type="number" id="cost" placeholder="Enter le coût en €/kWh" required>
+        </div>
+        <button onclick="calculateCosts()">Calculer</button>
+        <div class="results" id="results">
+            <h3>Résultats:</h3>
+            <p>Coût Quotidien: <span id="daily"></span>€</p>
+            <p>Coût Mensuel: <span id="monthly"></span>€</p>
+            <p>Coût Annuel: <span id="yearly"></span>€</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
