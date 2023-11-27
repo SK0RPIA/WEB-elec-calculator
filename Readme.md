@@ -39,4 +39,4 @@ Ce projet est distribué sous la licence GNU General Public License v3 (GPLv3). 
 
 ## Contact
 
-Pour toute question ou suggestion, n'hésitez pas à me contacter à [email@exemple.com](mailto:email@exemple.com).
+Pour toute question ou suggestion, n'hésitez pas à me contacter à [email@exemple.com](mailto:contact@skorpia.fr).
